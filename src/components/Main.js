@@ -42,7 +42,7 @@ export default class Main extends React.Component {
                     <Card
                         color={'#BF4C67'}
                         icon={windIcon}
-                        amount={'1.6'}
+                        amount={this.props.wind}
                         unit={'km/h'}
                         title={'Wind'}
                         titleBackground={'#AF3E44'}
@@ -50,7 +50,7 @@ export default class Main extends React.Component {
                     <Card
                         color={'#AF5C7E'}
                         icon={HumidityIcon}
-                        amount={'1.6'}
+                        amount={this.props.humidity}
                         unit={'%'}
                         title={'Humidity'}
                         titleBackground={'#9D4B6C'}
@@ -58,11 +58,12 @@ export default class Main extends React.Component {
                     <Card
                         color={'#BF4C67'}
                         icon={AirPressureIcon}
-                        amount={'1.6'}
+                        amount={this.props.pressure}
                         unit={'hpa'}
                         title={'Air Pressure'}
                         titleBackground={'#AF3E44'}
-                    /></View>
+                    />
+                </View>
             </View>
         )
     }
