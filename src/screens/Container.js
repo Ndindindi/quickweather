@@ -5,6 +5,7 @@ import { StyleSheet, Text, View, StatusBar, Dimensions } from 'react-native';
 //importing custom modules
 import {styles} from '../../src/styles/styles';
 import Swiper from 'react-native-swiper'
+import Main from "../components/Main";
 
 //variable declarations
 const { width, height } = Dimensions.get('window');
@@ -23,9 +24,11 @@ export default class Container extends React.Component{
                     }}
                     loop={false}>
                 <View style={styles.slide}>
-                    <Text>
-                        Dar es salaam
-                    </Text>
+                    <Main
+                        temperature={18}
+                        clouds={'Sunny'}
+                        region={'Dar es salaam'}
+                    />
                 </View>
                 <View style={styles.slide}>
                     <Text>
