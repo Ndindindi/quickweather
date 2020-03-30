@@ -9,7 +9,8 @@ import Swiper from 'react-native-swiper'
 //variable declarations
 const { width, height } = Dimensions.get('window');
 
-export default function App() {
+export default class Container extends React.Component{
+    render() {
     return (
         <View style={styles.outerContainer}>
         <View style={styles.container}>
@@ -40,6 +41,6 @@ export default function App() {
         </View>
         </View>
     );
-}
+}}
 
 

@@ -4,12 +4,11 @@ import { StyleSheet, Text, View, StatusBar } from 'react-native';
 
 //importing custom modules
 import {styles} from './src/styles/styles'
-import Swiper from "./src/screens/Swiper";
+import Container from "./src/screens/Container";
 
 export default function App() {
   return (
-      <Swiper/>
+      <Container/>
   );
 }
-
 
